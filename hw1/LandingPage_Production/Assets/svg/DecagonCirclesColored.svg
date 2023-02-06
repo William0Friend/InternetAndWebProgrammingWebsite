@@ -1,0 +1,113 @@
+<svg width="100%" height="100%" viewBox="0 0 600 600"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <title>Colored Circles in Decagon shape</title>
+  
+  <desc><![CDATA[
+    Colored Circles in Decagon shape
+    
+    Drawn with 2 circles. Circles are reused, rotated, clipped, and masked as needed.
+    Can easily change colors and/or flip to change curvature.
+    
+    Inspired by http://www.dailyminimal.com/post/147242488309/jl16-635-a-new-geometric-design-every-day
+    
+    Change colors by modifying styles:
+      .c1 is first circle
+      .c2 is unused
+      .c21 - .c25 is second circle overwriting first circle
+      .c3 is the color of the center decagon
+      .c4 is the image background
+    
+    Change curvature by changing the transformation
+      from: transform="translate(0,0) scale(1,1)" 
+      to:   transform="translate(600,0) scale(-1,1)"
+      
+    written by Jay Nick
+    steamcoded.org
+  ]]>
+  </desc>
+
+  <style type="text/css"><![CDATA[
+    .c1 {fill:navy;mask:url(#m2);clip-path:url(#cp1);}
+    .c2 {fill:black;}
+    .c3 {fill:white;}
+    .c4 {fill:white;}
+
+    .c21 {fill:red;}
+    .c22 {fill:orange;}
+    .c23 {fill:yellow;}
+    .c24 {fill:lime;}
+    .c25 {fill:cyan;}
+  ]]>
+  </style>
+  
+  <defs>
+    <symbol id="circle1">
+      <circle cx="290" cy="168" r="145" />
+    </symbol>
+    
+    <symbol id="circle2">
+      <circle cx="300" cy="150" r="135" />
+    </symbol>
+    
+    <clipPath id="cp1" transform="rotate(-36,300,300)">
+      <circle cx="300" cy="150" r="137" />
+    </clipPath>
+    
+    <mask id="m1">
+      <rect width="600" height="600" style="fill:white;" />
+      <use xlink:href="#circle1" style="fill:black;" />
+      <use xlink:href="#circle2" style="fill:black;" />
+    </mask>
+    
+    <mask id="m2">
+      <rect width="600" height="600" style="fill:white;" />
+      <use xlink:href="#circle2" style="fill:black;" />
+    </mask>
+  </defs>
+  
+  <rect width="100%" height="100%" class="c4" />
+  <circle cx="300" cy="300" r="20" class="c3" />
+  
+  <g transform="translate(600,0) scale(-1,1)">
+    <use xlink:href="#circle1" class="c1" />
+    <use xlink:href="#circle2" class="c21" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(36,300,300)" />
+    <use xlink:href="#circle2" class="c22" transform="rotate(36,300,300)" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(72,300,300)" />
+    <use xlink:href="#circle2" class="c23" transform="rotate(72,300,300)" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(108,300,300)" />
+    <use xlink:href="#circle2" class="c24" transform="rotate(108,300,300)" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(144,300,300)" />
+    <use xlink:href="#circle2" class="c25" transform="rotate(144,300,300)" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(180,300,300)" />
+    <use xlink:href="#circle2" class="c21" transform="rotate(180,300,300)" />
+  
+    <use xlink:href="#circle1" class="c1" transform="rotate(216,300,300)" />
+    <g style="mask:url(#m1);">
+      <use xlink:href="#circle2" class="c22" transform="rotate(216,300,300)" />
+    </g>
+
+    <use xlink:href="#circle1" class="c1" transform="rotate(252,300,300)" />
+    <g style="mask:url(#m1);">
+      <use xlink:href="#circle2" class="c23" transform="rotate(252,300,300)" />
+    </g>
+
+    <use xlink:href="#circle1" class="c1" transform="rotate(288,300,300)" />
+    <g style="mask:url(#m1);">
+      <use xlink:href="#circle2" class="c24" transform="rotate(288,300,300)" />
+    </g>
+
+    <use xlink:href="#circle1" class="c1" transform="rotate(324,300,300)" />
+    <g style="mask:url(#m1);">
+      <use xlink:href="#circle2" class="c25" transform="rotate(324,300,300)" />
+    </g>
+  </g>
+  
+</svg>

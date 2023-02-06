@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 500 200" version="1.0">
+  <defs id="defs4">
+    <filter id="filter3665" y="-.27714" width="1.099" height="1.5543" x="-.049502">
+      <feGaussianBlur id="feGaussianBlur3667" stdDeviation="3.7749486"/>
+    </filter>
+    <filter id="filter3701">
+      <feGaussianBlur id="feGaussianBlur3703" stdDeviation="4.2472285"/>
+    </filter>
+    <filter id="filter3769" y="-.73948" width="2.1869" height="2.479" x="-.59344">
+      <feGaussianBlur id="feGaussianBlur3771" stdDeviation="5.9949699"/>
+    </filter>
+    <filter id="filter3785">
+      <feGaussianBlur id="feGaussianBlur3787" stdDeviation="2.1528168"/>
+    </filter>
+    <mask id="mask4013" maskUnits="userSpaceOnUse">
+      <g id="g4015" transform="matrix(1.046 0 0 1.046 -148.33 58.197)">
+        <path id="path4017" fill="#fff" d="m1114.7 638.55h97.4c39.8 0 71.8 30.2 71.8 67.71 0 37.5-32 67.7-71.8 67.7h-97.4"/>
+        <path id="path4019" fill="#bc1f2a" d="m1114.7 638.55v135.41h-189.87c-39.78 0-71.81-30.2-71.81-67.7 0-37.51 32.03-67.71 71.81-67.71h189.87z"/>
+      </g>
+    </mask>
+    <filter id="filter4025" y="-.15443" width="1.0971" height="1.3089" x="-.048525">
+      <feGaussianBlur id="feGaussianBlur4027" stdDeviation="9.11298"/>
+    </filter>
+    <linearGradient id="linearGradient2446" y2="757.5" gradientUnits="userSpaceOnUse" x2="273.45" gradientTransform="translate(-3.9413 -133.68)" y1="757.5" x1="183.17">
+      <stop id="stop3711" stop-color="#fff" offset="0"/>
+      <stop id="stop3713" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="layer1" transform="translate(-151.49 -583.31)">
+    <g id="g2813" transform="matrix(1.046 0 0 1.046 -24.041 -16.962)">
+      <g id="g4074" transform="translate(-1.9315 206.67)">
+        <g id="g4065" transform="translate(37.322 -179.76)">
+          <path id="path2823" fill="#fff" d="m417.37 576.75h97.34c39.78 0 71.81 30.19 71.81 67.7 0 37.5-32.03 67.7-71.81 67.7h-97.34"/>
+          <path id="rect2792" fill="#bc1f2a" d="m417.37 576.75v135.4h-189.92c-39.78 0-71.81-30.2-71.81-67.7 0-37.51 32.03-67.7 71.81-67.7h189.92z"/>
+          <path id="path3705" opacity=".14136" filter="url(#filter3785)" d="m232.1 582.85c-16.23 1.76-29.32 7.53-38.37 18.45-5.73 6.92-9.83 15.9-12.09 27.25-2.01 10.13-2.54 22.14-1.44 36.24 4.02-9.23 7.83-18.89 12.12-27.57 4.05-8.17 8.53-15.47 14.04-20.73 6.98-6.66 15.62-10.03 27.11-7.69l36.04 0.47-1.17-24.35-36.24-2.07z" fill="url(#linearGradient2446)"/>
+          <rect id="rect2827" opacity=".9" rx="5" ry="5" height="32.691" filter="url(#filter3665)" width="183.02" y="583.01" x="243.91" fill="#fff"/>
+          <path id="path3669" opacity=".25" filter="url(#filter3701)" d="m228.39 580.61c-3.4 0-6.74 0.23-10.01 0.66 0.8-0.09 1.62-0.15 2.42-0.21 94.46-0.87 188.96 0.06 283.43-0.45h-275.84zm284 0c1.62 0.03 3.25 0.09 4.87 0.18 1.79-0.02 3.55 0.02 5.32 0.15-2.29-0.21-4.59-0.33-6.93-0.33h-3.26zm25.99 3.47c19.98 6.54 36.3 22.22 40.31 41.34 7.03 29.31-19.82 58.7-51.48 62.68-72.75 1.59-145.56 0.55-218.33 0.72-27.64-0.49-55.29 0.71-82.91-0.18-29.94 0.51-58.27-21.54-61.27-48.61-3.35-24.48 15.64-47.42 40.39-55.77-28.27 9.08-48.52 34.25-48.52 64.05 0 37.51 32.04 67.7 71.82 67.7h287.26c39.78 0 71.82-30.19 71.82-67.7 0-30-20.52-55.3-49.09-64.23z" fill="#4d4d4d"/>
+          <path id="path3733" opacity=".53927" d="m179.49 836.94s1.78 7.7 7.52 10.45l25.45 12.22c-0.23-5.24 25.51-6.24 29.85-9.52-3.8 2.23-45.63-2.84-48.59-3.64-5.23-1.41-9.53-6.2-14.23-9.51z" transform="matrix(.95603 0 0 .95603 22.866 -119.38)" filter="url(#filter3769)" stroke-width="1px" fill="#fff"/>
+          <path id="path3789" opacity=".26702" d="m818.06 726.12c-41.61 0-75.12 31.59-75.12 70.82s33.51 70.81 75.12 70.81h300.44c41.6 0 75.2-31.58 75.2-70.81s-33.6-70.82-75.2-70.82h-300.44z" mask="url(#mask4013)" transform="matrix(.95603 0 0 .95603 -555.45 -117.44)" filter="url(#filter4025)" stroke="#000" stroke-width="6" fill="none"/>
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Pills</dc:title>
+        <dc:date>2009-03-27T09:40:33</dc:date>
+        <dc:description>Choose, Neo!</dc:description>
+        <dc:source>http://openclipart.org/detail/23425/pills-by-boobaloo-23425</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>boobaloo</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>color</rdf:li>
+            <rdf:li>drug</rdf:li>
+            <rdf:li>health</rdf:li>
+            <rdf:li>image</rdf:li>
+            <rdf:li>matrix</rdf:li>
+            <rdf:li>media</rdf:li>
+            <rdf:li>medical</rdf:li>
+            <rdf:li>medicine</rdf:li>
+            <rdf:li>photorealistic</rdf:li>
+            <rdf:li>pill</rdf:li>
+            <rdf:li>png</rdf:li>
+            <rdf:li>public domain</rdf:li>
+            <rdf:li>svg</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
