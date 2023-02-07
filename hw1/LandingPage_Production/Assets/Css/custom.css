@@ -1,7 +1,7 @@
 ﻿:root {
     --main-bg-color: slategray;
+    --main-font-color: black;
 }
-
 
 body {
     background-color: var(--main-bg-color,seagreen);
@@ -14,7 +14,7 @@ img.banner {
     aspect-ratio: attr(width) / attr(height);
 }
 
-footer {
+footer a{
     color: black;
 }
 
@@ -37,3 +37,18 @@ footer {
 }
 
 /*testimonial*/
+
+
+/*video*/
+video {
+    position: relative;
+    width: 100%;
+}
+
+/*
+    table
+*/
+table {
+    position: relative;
+    width: 100%;
+}

@@ -1,7 +1,8 @@
-﻿let banner = document.getElementById("skeleton-banner");
+﻿let banner = document.getElementsByClassName("banner")
 //banner.style.alignContent("center");
 //banner.style.maxWidth("100");
 //banner.style.height("auto");
+
 let win = window.onbeforeunload
 
 window.onbeforeunload = ExitPage;
