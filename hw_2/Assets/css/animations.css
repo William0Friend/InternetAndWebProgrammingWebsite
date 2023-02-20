@@ -1,0 +1,22 @@
+﻿#banner {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+       
+        margin-left: 100%;
+        width: 50%;
+    }
+
+    75% {
+        margin-right: 25%;
+        width: 75%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
