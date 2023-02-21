@@ -20,15 +20,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"></script>
-    <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
     <!-- Three.js -->
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js"
     integrity="sha512-6p9lGA4Cm89KiwN1CixiOVQU2H9e13LeYoN6/Hj/qoUhtrMW5vNiqQz9Z96Z7/I8u89ghL6SPBz9na5HFVzF3g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     -->
-
+    <!-- thr33.js the proper way
     <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
 
     <script type="importmap">
@@ -39,6 +38,7 @@
           }
         }
     </script>
+    -->
     <!-- Fonts -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
     <!-- Override bootstrap, with higher specificity -->
@@ -48,14 +48,26 @@
     <script defer src="./Assets/javascript/scrollMagic.js"></script>
 
     <link rel="stylesheet" type="text/css" href="./Assets/css/scrollMagic.css" />
-    <script src="./Assets/javascript/script.js" ></script>
+    <!-- Progress bar is in jquery so...-->
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!-- Progress Bar -->
+    <!--<script defer src="./Assets/javascript/script.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+            integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./Assets/css/styles.css" />
+    <!-- button wiggle -->
+    <link rel="stylesheet" type="text/css" href="./Assets/css/btn-pulser.css" />
+
+    <link rel="stylesheet" type="text/css" href="./Assets/css/btn-wiggle.css" />
 </head>
 
 <body>
 
     <header>
         <section>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Skeletons.com</a>
@@ -79,6 +91,13 @@
             </nav>
         </section>
 
+        <!-- progress bar -->
+       
+            <div class="my-progress-container my-fixed-top">
+                <span class="my-progress-bar"></span>
+            </div>
+       
+
         <!-- �	Banner -->
         <section>
             <div id="outer container-fluid">
@@ -88,8 +107,8 @@
                 </div>
             </div>
             <!-- <div class="container-fluid">
-                <img src="./Assets/svg/Skeletons_com_png.png" />
-            </div> -->
+            <img src="./Assets/svg/Skeletons_com_png.png" />
+        </div> -->
         </section>
     </header>
 
@@ -111,8 +130,8 @@
                         <li> Both Public and Anonymous skeleton transactions are avalible.</li>
                     </ul>
                 </p>
-                <button id="buy1" class="btn btn-primary btn-lg ml-5 animated tada infinite " type="button" title="I want to buy a skeleton">Buy</button>
-                <button id="sell1" class="btn btn-primary btn-lg ml-5 mr-5 " type="button"
+                <button id="buy1" class="btn btn-primary btn-lg ml-5 pulser " type="button" title="I want to buy a skeleton">Buy</button>
+                <button id="sell1" class="btn btn-primary btn-lg ml-5 mr-5 pulser " type="button"
                         title="I want to sell a skeleton">
                     Sell
                 </button>
@@ -125,17 +144,24 @@
         <div class="row align-items-md-stretch my-2 mx-1">
             <div class="col-md-6">
                 <div class="h-100 p-5 text-white bg-dark rounded-3">
-                    <h2>Change the background</h2>
-                    <p>Swap the background-color utility and add a `.text-*` color utility to mix up the jumbotron look. Then, mix and match with additional component themes and more.</p>
-                    <button class="btn btn-outline-light" type="button">Example button</button>
+                    <h2>Our History</h2>
+                    <p>
+                            Our skeleton site, skeletons.com has been evolving with the internet for a long time. Our founder was Dr. Skele McSkeleton. The McSkeleton family fortune
+                        was made through the completely legal sale of cadaviers to medical hospitals in the 1800s. is completely legitimate grandchildren took that completely
+                        legal money and started this site, to further their grandfather's mission of buying and selling skeletons on behalf of our members. The grandson, Heuy, Dewey, and Louie, 
+                        McSkeleton are proud to carry on their grandfather's legacy. We have been and always will be your one stop skeleton shop.
+                    </p>
+                    <button id="btn-dark-square-our-history" class="btn btn-outline-light" type="button">Example button</button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="h-100 p-5 bg-light border rounded-3">
                     <h2>Add borders</h2>
                     <img src="Assets/svg/Cartoon-Skeleton.svg" />
-                    <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-                    <button class="btn btn-outline-secondary" type="button">Example button</button>
+                    <p>
+                            Don't go to far! Take another look at our skeleton collection!'
+                    </p>
+                    <button id="btn-light-square-view-our-skelection"class="btn btn-outline-secondary" type="button">View our skelection!</button>
                 </div>
             </div>
         </div>
@@ -194,21 +220,14 @@
             <div class="container py-5">
                 <h1 class="display-5 fw-bold text-center">Skeletons.com Mission Statement</h1>
                 <p class="col-md-8 fs-4">
-                    Skeletons.com mission is to empower independant business owners, dreamers,
-                    non-technical creatives, or anyone who may want to buy or sell their skeleton, to connect with
-                    developers, engineers, scientists, and programmers who also want to buy or sell their skeleton.
-
-                    Skeletons.com, your one stop skeleton shop
+                    Meet the Team
                     <ul>
-                        <li>All payments handled through stripe, square, or crypto.</li>
-                        <li> Both Public and Anonymous skeleton transactions are avalible.</li>
+                        <li>This team works themselves to the bone</li>
+                        <li> Winner of best skeleton website since 1991</li>
                     </ul>
                 </p>
-                <button class="btn btn-primary btn-lg ml-5 animated tada infinite " type="button" title="I want to buy a skeleton">Buy</button>
-                <button class="btn btn-primary btn-lg ml-5 mr-5 " type="button"
-                        title="I want to sell a skeleton">
-                    Sell
-                </button>
+                <button class="btn btn-primary btn-lg ml-5 animated tada infinite " type="button" title="I want to buy a skeleton"><a href="#meet-the-team">Meet the team</a></button>
+               
 
             </div>
         </div>
@@ -216,10 +235,12 @@
 
    
     <!--Headings make more-->
-    <section class="hidden">
+    <section id="meet-the-team" class="hidden">
         <div class="row">
             <div class="col-4">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                <img class="bd-placeholder-img rounded-circle" width="140" height="140" 
+                src="./Assets/image/" role="img" aria-label="Placeholder: 140x140" 
+                preserveAspectRatio="xMidYMid slice" focusable="false"><title>Rick Sanchez</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text> />
 
                 <h2>Heading</h2>
                 <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
@@ -288,10 +309,12 @@
             <div class="py-5">
                 <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p class="fs-5 mb-4">
+                        Some skeletons are worth more then money. So are some companies. We also accept cash and skeleton donations.    
+                    </p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
-                        <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
+                        <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold last1">Donate Money</button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4 last2">Donate Skeleton</button>
                     </div>
                 </div>
             </div>
