@@ -1,0 +1,55 @@
+﻿/*
+    // State 1
+<div class="ball"></div>
+// State 2
+<div class="ball ball--scale-up"></div>
+// State 3
+<div class="ball ball--scale-up ball--circling"></div>
+// State 4
+<div class="ball ball--scale-up ball--circling ball--scale-down"></div>
+// State 5
+<div class="ball"></div>
+
+    setTimeout(function () {
+    document.querySelector('.ball').addClass('active');
+}, 500);
+*/
+
+@keyframes ball-scale {
+    from {
+        transform: scale(1);
+        box-shadow: 0 8px 6px -6px #6C7A89;
+    }
+
+    to {
+        transform: scale(1.25);
+        box-shadow: 0 10px 6px -6px #6C7A89;
+    }
+}
+
+.ball--scale-up {
+    animation: ball-scale 1s ease-out forwards;
+}
+
+@keyframes ball-circular {
+    from {
+        box-shadow: 0 10px 6px -6px #6C7A89;
+        transform-origin: 50% -450%;
+        transform: scale(1.25) rotate(0deg) translateY(-100%) rotate(0deg);
+    }
+
+    to {
+        box-shadow: 0 10px 6px -6px #6C7A89;
+        transform-origin: 50% -450%;
+        transform: scale(1.25) rotate(360deg) translateY(-100%) rotate(-360deg);
+    }
+}
+
+.ball--circling {
+    animation: ball-circular 2s ease-in-out forwards;
+}
+
+.ball--scale-down {
+    animation: ball-scale 1s ease-in forwards;
+    animation-direction: reverse;
+}
