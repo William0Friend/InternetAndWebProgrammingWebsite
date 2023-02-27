@@ -2,7 +2,8 @@
  * @param {number[]} nums
  * @return {number}
  */
-var pivotIndex = function(nums) {
+/*
+var pivotIndex = (nums) => {
     let sum = 0, leftsum = 0;
     //nums.forEach(loop);
    //function loop(item){
@@ -25,4 +26,6 @@ console.log(answer)
 answerSection = document.createElement("section");
 answerDiv = answerSection.createElement("div");
 answerObject = answerDiv.createElement("object");
-answerSection
+answer = document.append(answerSection);
+answer.innerHTML(pivotIndex);
+*/

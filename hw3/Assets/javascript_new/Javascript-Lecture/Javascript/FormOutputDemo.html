@@ -1,0 +1,39 @@
+<html>
+   <head>
+      <title>Form Output Demo</title>
+      <script type="text/javascript">
+          function evalGuess()
+          {
+              var x = document.getElementById("boxID");
+              var y = document.getElementById("labelID");
+              if (x.value == new String("Robert").valueOf()) {
+                  y.innerHTML = "Last Name: ";
+                  x.value = "Marmelstein";
+              }
+              else
+              {
+                  y.innerHTML = "First Name: ";
+                  x.value = "Unknown";
+              }
+          }
+       </script>
+   </head>
+
+   <body>
+
+      <h1>Guess the Last Name</h1>
+
+      <form>
+         <p>
+             <label id="labelID">First Name:</label> 
+             <input id="boxID" type = "text"  style="margin-left:10px" size="25px" />
+         </p>
+
+         <p>
+            <input type="button" onclick="evalGuess()" value="Evaluate Guess" />
+         </p>   
+
+      </form>
+
+   </body>
+</html>

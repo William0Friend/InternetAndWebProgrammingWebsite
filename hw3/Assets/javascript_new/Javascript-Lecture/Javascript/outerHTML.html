@@ -1,0 +1,25 @@
+<html>
+<head>
+    <script language="javascript">
+        function fnCopyHTML() {
+            var oWorkItem = event.srcElement;
+            if ((oWorkItem.tagName != "UL") && (oWorkItem.tagName != "LI")) {
+                alert("Adding " + oWorkItem.outerHTML + " to the list.");
+                oScratch.innerHTML += oWorkItem.outerHTML + "<BR>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Please click on the desired list bullet</h2>
+    <UL onclick="fnCopyHTML()">
+        <LI><B>Bold text</B>
+        <LI><I>Italic text</I>
+        <LI><U>Underlined text</U>
+        <LI><STRIKE>Strikeout text</STRIKE>
+    </UL>
+    <P />
+    <DIV ID="oScratch">
+    </DIV>
+</body>
+</html>

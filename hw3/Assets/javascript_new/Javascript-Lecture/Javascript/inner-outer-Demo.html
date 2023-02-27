@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function modifyHTML() {
+            var test = document.getElementById("targetID");
+            alert("InnerText is: " + test.innerText);
+            alert("OuterText is: " + test.outerText);
+            alert("InnerHTML is: " + test.innerHTML);
+            alert("OuterHTML is: " + test.outerHTML);
+            test.outerText = "OuterText destroys the Div tag";
+
+            // Never gets execute because entire div is replaced
+            var test2 = document.getElementById("targetID");
+            alert("InnerHTML is: " + test2.innerHTML);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            <input type="button" onclick="modifyHTML()" value="Modify HTML" />
+        </p>
+    </div>
+    <div ID="targetID"><B>This is a demo for inner/outer text/html combinations</B></div>
+
+</body>
+</html>

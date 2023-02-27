@@ -1,5 +1,5 @@
 ﻿/* Animation property */
-.ni-wiggle {
+.myWiggle {
     animation: wiggle 2s linear infinite;
 }
 

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml/DTD/xhtml1 transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to Maple County</title>
+<script type="text/javascript">
+
+    var scrollMsg="   ** Remember, property taxes are due on June 15 **  "
+    var beginPos=0
+    function scrollingMsg() {
+       document.msgForm.scrollingMsg.value = scrollMsg.substring(beginPos,scrollMsg.length)+scrollMsg.substring(0,beginPos)
+       beginPos+=1
+       if (beginPos > scrollMsg.length) {
+          beginPos=0
+       }
+       window.setTimeout("scrollingMsg()",200)
+    }
+
+function validateInput(myForm) {
+    var mValue = parseInt(document.taxCalc.aValue.value,10)
+    if (isNaN(mValue) || (mValue < 0)) {
+        alert("Assessed value is not a valid entry")
+        document.taxCalc.aValue.value = ""
+        document.taxCalc.aValue.focus()
+    }
+    else {
+          var mhomestead = parseInt(document.taxCalc.homestead.value,10)
+          if (isNaN(mhomestead) || (mhomestead < 0)) {
+             alert("Homestead discount is not a valid entry")
+             document.taxCalc.homestead.value = ""
+             document.taxCalc.homestead.focus()
+          }
+          else {
+                 var mseniorDisc = parseInt(document.taxCalc.seniorDisc.value,10)
+                 if (isNaN(mseniorDisc) || (mseniorDisc > 1000)) {
+                    alert("Senior Discount not a valid entry")
+                    document.taxCalc.seniorDisc.value = ""
+                    document.taxCalc.seniorDisc.focus()
+                 }
+                 else {
+                    document.taxCalc.propTax.value = "$ " + CalcTaxes(mValue,mhomestead,mseniorDisc)
+                 }
+          }
+     }
+}
+
+function CalcTaxes(assessValue,HomeDisc,Seniors) {
+   var newAssessValue = assessValue - HomeDisc - Seniors
+   var propTaxes = newAssessValue * .0309
+   propTaxes = Math.round(propTaxes*100)/100
+   return propTaxes
+}
+
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	color: #711814;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body onload="scrollingMsg()">
+<p align="center"><img src="Images/maple_cty_logo.jpg" alt="banner" width="659" height="102" /></p>
+<p align="center"><img src="Images/greenbar_logo.jpeg" alt="green divider bar" width="650" height="5" /></p>
+<form name="msgForm" action="">
+    <p align="center"><input type="text" name="scrollingMsg" size="25" /></p>
+</form>
+<table width="72%" border="0" align="center">
+  <tr>
+    <td valign="top"><p class="style1">To calculate your Maple County Property Taxes, enter your assessed value, enter your homestead discount value, and if you are over 65 enter the senior citizen discount of 1000. If all values are correct, click the Calculate button to see your estimated property tax.  </p>
+      <form id="taxCalc" name="taxCalc" action="">
+        <table width="100%" border="0" cellpadding="3" cellspacing="3">
+          <tr>
+            <td width="50%"><div align="right">Enter the assessed value of your home:</div></td>
+            <td width="50%"><input name="aValue" type="text" size="12" /></td>
+          </tr>
+          <tr>
+            <td><div align="right">Enter the homestead discount: </div></td>
+            <td width="50%"><input name="homestead" type="text" size="12" /></td>
+          </tr>
+          <tr>
+            <td><div align="right">Enter 1000 if you are over 65 years old</div></td>
+            <td width="50%"><input name="seniorDisc" type="text" size="12" /></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td width="50%">
+               <input type="button" name="Button" value="Calculate" onclick="validateInput(taxCalc)" />
+               <input type="reset" name="Submit2" value="Reset" />			            </td>
+          </tr>
+          <tr>
+            <td><div align="right">Assessed Taxes for Maple County Resident:</div></td>
+            <td width="50%"><input name="propTax" type="text" size="15" /></td>
+          </tr>
+        </table>
+      </form>
+  </td>
+  </tr>
+  <tr>
+    <td></td>
+  </tr>
+</table>
+</body>
+</html>
