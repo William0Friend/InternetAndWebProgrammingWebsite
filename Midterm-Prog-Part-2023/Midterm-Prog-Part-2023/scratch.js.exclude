@@ -1,0 +1,254 @@
+﻿//<!-- print out ticker info -->
+
+function showInfo() {
+    //let div2 = getElementById("div2");
+    var xmlDocument = loadXMLDoc("stocks.xml")
+
+    // get the root element
+    // Portfolio
+    var element = xmlDocument.documentElement;
+    var portfolio = xmlDocument.documentElement;
+
+    var stockInfo = document.getElementById('stockInfo');
+    //Here is the root node of the document: Portfolio
+    //The following are its child elements: 5
+    stockInfo.innerHTML = "<p>Here is the root node of the document: " +
+        "<strong>" + element.nodeName + "</strong>" +
+        "<br />The following are its child elements:" + element.childElementCount
+    "</p><ol>";
+
+    // get the first child node of root element
+    //var currentNode = element.firstElementChild;
+    var stockNode = element.firstElementChild;
+    // traverse all child nodes of root element
+    // Company
+    var curNode = stockNode.firstElementChild;
+    stockInfo.innerHTML += "<ol>"
+    while (curNode != null) {
+        // print node name of each child element
+        stockInfo.innerHTML += "<li><strong>" + curNode.nodeName + " - " curNode.textContent "</strong></li>";
+        curNode = curNode.nextElementSibling;
+    }
+    stockInfo.innerHTML += "/<ol>"
+
+    stockInfo.innerHTML += "<br />The first child of root node is: " +
+        "<li><strong>" + curNode.nodeName + " - " curNode.textContent "</strong></li>";
+    // get the first child node of root element
+    var currentNode = element.firstElementChild;
+
+    stockInfo.innerHTML += "<br />The first child of root node is: " +
+        "<li><strong>" + currentNode + " - " + curNode.textContent + "</strong></li>";
+
+    // get the next sibling of first child
+    var nextSib = currentNode.nextElementSibling;
+
+    stockInfo.innerHTML += "<br /> whose next sibling is:  <strong>" + nextSib.nodeName +
+        "</strong>.  <br />The first child of <strong>" +
+        nextSib.parentNode + "</strong> element is: " + nextSib.parentElement;
+
+    var value = nextSib.firstElementChild.nodeName;
+    var valueText = nextSib.firstElementChild.textContent;
+
+    // print the text value of the sibling
+    stockInfo.innerHTML += "<em>" + value + "</em> and its value is <em> " + valueText + "</em > " +
+        "<br />Parent node of <strong>" + nextSib.nodeName +
+        "</strong> is: <strong>" +
+        nextSib.parentNode.nodeName + "</strong>.</p>";
+    stockInfo.innerHTML += "</ol>";
+
+
+}
+
+    </script >
+
+        < !--added by me
+    < div id = "div2" >
+        </div >
+
+    <div id="div1" class="container">
+        <button onclick="displayResult()">Click me letter</button>
+    </div>
+    </body >
+    </html >
+
+
+
+    stockInfo.innerHTML += "<br />The first child of root node is: " +
+        "<strong>" + currentNode.nodeName + "</strong>" + curNode.textContent + "</strong></li>";
+// get the first child node of root element
+var currentNode = element.firstElementChild;
+
+stockInfo.innerHTML += "<br />The first child of root node is: " +
+    "<strong>" + currentNode + "</strong>" + "</strong>" + curNode.textContent + "</strong></li>";
+
+// get the next sibling of first child
+var nextSib = currentNode.nextElementSibling;
+
+stockInfo.innerHTML += "<br /> whose next sibling is:  <strong>" + nextSib.nodeName +
+    "</strong>.  <br />The first child of <strong>" +
+    nextSib.parentNode + "</strong> element is: " + nextSib.parentElement;
+
+var value = nextSib.firstElementChild.nodeName;
+var valueText = nextSib.firstElementChild.textContent;
+
+// print the text value of the sibling
+stockInfo.innerHTML += "<em>" + value + "</em> and its value is <em> " + valueText + "</em > " +
+    "<br />Parent node of <strong>" + nextSib.nodeName +
+    "</strong> is: <strong>" +
+    nextSib.parentNode.nodeName + "</strong>.</p>";
+-->
+    < !--
+
+        < script type = "text/javascript" language = "JavaScript" >
+    function loadXMLDoc(dname) {
+        var xmlDoc;
+
+        try {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('GET', dname, false);
+            xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+            xmlhttp.send('');
+            xmlDoc = xmlhttp.responseXML;
+        }
+        catch (e) {
+            console.error(e.message);
+        }
+        return xmlDoc;
+        //---------
+        function displayResult() {
+            var xmlDocument = loadXMLDoc("letter.xml");
+
+            // get the root element
+            var element = xmlDocument.documentElement;
+
+
+            var div2 = document.getElementById('div2');
+
+            div2.innerHTML = "<p>Here is the root node of the document: " +
+                "<strong>" + element.nodeName + "</strong>" +
+                "<br />The following are its child elements:" +
+                "</p><ul>";
+
+            // traverse all child nodes of root element
+            var curNode = element.firstElementChild;
+            while (curNode != null) {
+                // print node name of each child element
+                div2.innerHTML += "<li><strong>" + curNode.nodeName + "</strong></li>";
+                curNode = curNode.nextElementSibling;
+            }
+
+            div2.innerHTML += "</ul>";
+
+            // get the first child node of root element
+            var currentNode = element.firstElementChild;
+
+            div2.innerHTML += "<br />The first child of root node is: " +
+                "<strong>" + currentNode.nodeName + "</strong>";
+
+            // get the next sibling of first child
+            var nextSib = currentNode.nextElementSibling;
+
+            div2.innerHTML += "<br /> whose next sibling is:  <strong>" + nextSib.nodeName +
+                "</strong>.  <br />The first child of <strong>" +
+                nextSib.nodeName + "</strong> element is: ";
+
+            var value = nextSib.firstElementChild.nodeName;
+            var valueText = nextSib.firstElementChild.textContent;
+
+            // print the text value of the sibling
+            div2.innerHTML += "<em>" + value + "</em> and its value is <em> " + valueText + "</em > " +
+                "<br />Parent node of <strong>" + nextSib.nodeName +
+                "</strong> is: <strong>" +
+                nextSib.parentNode.nodeName + "</strong>.</p>";
+        }
+    }
+        </script >
+
+    // traverse all child nodes of root element
+                var curNode = element.firstElementChild;
+while (curNode != null) {
+    // print node name of each child element
+    let attribute = "symbol";
+    stockList.innerHTML += "<li><strong>" + curNode.nodeName + curNode.getAttribute(attribute) + "</strong></li>";
+    curNode = curNode.nextElementSibling;
+}
+
+<head>
+    <title>A DOM Example</title>
+    <script type="text/javascript" language="JavaScript">
+
+        function loadXMLDoc(dname) {
+                    var xmlDoc;
+
+        try {
+                        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open('GET', dname, false);
+        xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+        xmlhttp.send('');
+        xmlDoc = xmlhttp.responseXML;
+                    }
+        catch (e) {
+            console.error(e.message);
+                    }
+        return xmlDoc;
+                }
+
+        function displayResult() {
+                    var xmlDocument = loadXMLDoc("./Assets/xml/letter.xml");
+
+        // get the root element
+        var element = xmlDocument.documentElement;
+
+
+        var div2 = document.getElementById('div2');
+
+        div2.innerHTML = "<p>Here is the root node of the document: " +
+            "<strong>" + element.nodeName + "</strong>" +
+            "<br />The following are its child elements:" +
+            "</p><ul>";
+
+                // traverse all child nodes of root element
+                var curNode = element.firstElementChild;
+                while (curNode != null) {
+                // print node name of each child element
+                div2.innerHTML += "<li><strong>" + curNode.nodeName + "</strong></li>";
+            curNode = curNode.nextElementSibling;
+                    }
+
+            div2.innerHTML += "</ul>";
+
+        // get the first child node of root element
+        var currentNode = element.firstElementChild;
+
+        div2.innerHTML += "<br />The first child of root node is: " +
+        "<strong>" + currentNode.nodeName + "</strong>";
+
+        // get the next sibling of first child
+        var nextSib = currentNode.nextElementSibling;
+
+        div2.innerHTML += "<br /> whose next sibling is:  <strong>" + nextSib.nodeName +
+            "</strong>.  <br />The first child of <strong>" +
+                nextSib.nodeName + "</strong> element is: ";
+
+        var value = nextSib.firstElementChild.nodeName;
+        var valueText = nextSib.firstElementChild.textContent;
+
+        // print the text value of the sibling
+        div2.innerHTML += "<em>" + value + "</em> and its value is <em> " + valueText + "</em > " +
+        "<br />Parent node of <strong>" + nextSib.nodeName +
+            "</strong> is: <strong>" +
+                nextSib.parentNode.nodeName + "</strong>.</p>";
+                }
+</script>
+
+        </head >
+
+    <body>
+        <div id="div1">
+            <button onclick="displayResult()">Click me</button>
+        </div>
+        <div id="div2">
+        </div>
+    </body>
+    </html >
+    -->

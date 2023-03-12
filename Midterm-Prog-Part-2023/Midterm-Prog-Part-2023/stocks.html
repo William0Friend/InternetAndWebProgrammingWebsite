@@ -1,0 +1,388 @@
+<html>
+
+<!-- Came with Midterm-->
+<head>
+    <title>CPSC 337 - Midterm</title>
+
+
+    <script src="jquery/jquery-3.6.3.min.js"></script>
+
+
+    <script type="text/javascript">
+        function loadXMLDoc(dname) {
+            var xmlDoc;
+            try {
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.open('GET', dname, false);
+                xmlhttp.setRequestHeader('Content-Type', 'text/xml');
+                xmlhttp.send('');
+                xmlDoc = xmlhttp.responseXML;
+            }
+            catch (e) {
+                console.error(e.message);
+            }
+            return xmlDoc;
+        }
+
+
+        function onBodyLoad() {
+            //let div2 = getElementById("div2");
+            var xmlDocument = loadXMLDoc("stocks.xml")
+
+            // get the root element
+            // Portfolio
+            var element = xmlDocument.documentElement;
+
+
+            var stockList = document.getElementById('stockList');
+
+            stockList.innerHTML = "<p>Here is the root node of the document: " +
+                "<strong>" + element.nodeName + "</strong>" +
+                "<br />The following are its child elements:" + element.childElementCount
+            "</p><ul>";
+
+            // traverse all child nodes of root element
+            var curNode = element.firstElementChild;
+            var stockNode = element.firstElementChild;
+            var curNodeArray = [];
+            ///var count = 0;
+            while (curNode != null) {
+                // print node name of each child element
+                var attribute = "symbol";
+                var value = curNode.getAttribute(attribute);
+                stockList.innerHTML += "<li><strong>" + value + "</strong></li>";
+                curNodeArray.pop(value);
+                console.log(curNodeArray);
+                curNode = curNode.nextElementSibling;
+                //count++;
+
+            }
+        }
+
+        const xmlNodesSorted = [];
+        xmlNodesSorted.pop(function loadDoc2() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "stocks.xml", true);
+            xhttp.send();
+        });
+        console.assert(xmlNodesSorted !== null);
+        console.log(xmlNodesSorted);
+        xmlNodesSorted = xmlNodesSorted.splice();
+        console.assert(xmlNodesSorted !== null);
+        console.log(xmlNodesSorted);
+
+
+
+        $(document).ready(function () {
+            //the variable to be appended here
+            $("#stockInfo2").append("<ol></ol>");
+        });
+        $.ajax({
+            type: "GET",
+            url: "stocks.xml",
+            dataType: "xml",
+            success: function (xml) {
+
+            }
+                    $(xml).find('Stock').each(function () {
+                var Company = $(this).find('Company').text();
+                var Market = $(this).find('Market').text();
+                var Sector = $(this).find('Sector').text();
+                var Price = $(this).find('Price').text();
+                var YearRange = $(this).find('YearRange').text();
+                var Low = $(this).find('Low').text();
+                var High = $(this).find('High').text();
+                //var Dividend = $(this).attr('available').value();
+
+                $("<li></li>").html("Company " + " = " + Company).appendTo("#stockInfo2 ol");
+                $("<li></li>").html("Market " + " = " + Market).appendTo("#stockInfo2 ol");
+                $("<li></li>").html("Sector " + " = " + Sector).appendTo("#stockInfo2 ol");
+                $("<li></li>").html("Price " + " = " + Price).appendTo("#stockInfo2 ol");
+                $("<li></li>").html("Company " + " = " + Low + " " + High).appendTo("#stockInfo2 ol");
+                //$("<li></li>").html("Dividend " + " = " + Dividend).appendTo("#stockInfo2 ol");
+
+            });
+            error: function () {
+                alert("The XML File could not be processed correctly.");
+            }
+        });
+
+
+
+
+
+    </script>
+
+    <style>
+        h2 {
+            color: Navy
+        }
+
+        li {
+            font-family: monospace;
+            font-weight: bold;
+            color: Navy;
+        }
+
+            li:hover {
+                color: red;
+            }
+
+    </style>
+
+
+</head>
+
+
+<!-- came with midterm -->
+<body onload="onBodyLoad()">
+
+    <h2>List of Stocks:</h2>
+    <div id="stockList"> </div>
+    <!-- <br />
+     <br />
+     <br />-->
+    <!--    <div id="stockBlank1"></div>
+    -->
+    <h2>List of Stocks (sorted):</h2>
+    <div id="stockListSorted"> </div>
+
+    <!--<br />
+    <br />
+    <br />-->
+    <!--    <div id="stockblank2"></div>
+    -->
+    <h2>Stock Info:</h2>
+    <div id="stockInfo"> </div>
+
+
+
+
+</body>
+</html>
+
+<!-- MUST PUT BACK -->
+<!-- <script type="text/javascript" language="JavaScript" src="src.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+
+    -->
+<!--<!--<!--    <!--<br />
+    <br />
+    <br />-->
+<!--<button onclick="loadDoc()">showInfo</button>
+<button onclick="printStockInfo()">showInfo</button>
+-->
+<!--    <div id="stockblank3"></div>
+-->
+<!-- Jquery -->
+<!--<script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            $("#div1").load("stocks.xml");
+        });
+    });
+</script>
+
+<div id="div1"><h2>Let jQuery AJAX Change This Text</h2></div>
+
+<button>Get External Content</button>
+-->
+-->-->-->
+
+
+<!-- AJAX ONLY WAY  not finnished-->
+<!--
+
+<a href="stocks.html">stocks.html</a>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc2()">Get my CD collection</button>
+<br>
+<br>
+<table id="demo"></table>
+
+<script>
+    function loadDoc2() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "stocks.xml", true);
+        xhttp.send();
+    }
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<tr>Portfolio</tr><tr>Stock</tr>";
+        var x = xmlDoc.getElementsByTagName("Portfolio");
+        for (i = 0; i < x.length; i++) {
+            table += "<tr>" +
+                x[i].getElementsByTagName("Portfolio")[0].childNodes[0].nodeValue +
+                "</tr><tr>" +
+                x[i].getElementsByTagName("Stock")[0].childNodes[0].nodeValue +
+                "</tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
+    }
+</script>
+
+<a href="stocks.html">stocks.html</a>
+
+<h1>The XMLHttpRequest Object</h1>
+
+<button type="button" onclick="loadDoc2()">Get my CD collection</button>
+<br>
+<br>
+<table id="demo"></table>
+
+<script>
+    function loadDoc2() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "stocks.xml", true);
+        xhttp.send();
+    }
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<tr>Portfolio</tr><tr>Stock</tr>";
+        var x = xmlDoc.getElementsByTagName("Portfolio");
+        for (i = 0; i < x.length; i++) {
+            table += "<tr>" +
+                x[i].getElementsByTagName("Portfolio")[0].childNodes[0].nodeValue +
+                "</tr><tr>" +
+                x[i].getElementsByTagName("Stock")[0].childNodes[0].nodeValue +
+                "</tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
+    }
+</script>
+
+
+   function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("stockInfo").innerHTML = this.responseText;
+                }
+            };
+            xhttp.open("GET", "stocks.xml", true);
+            xhttp.send();
+        }
+
+
+ var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                // Typical action to be performed when the document is ready:
+                document.getElementById("stocksListSorted").innerHTML = xhttp.responseText;
+            }
+        };
+        xhttp.open("GET", "stocks.xml", true);
+        xhttp.send();
+
+
+        //function showInfo() {
+        //    //let div2 = getElementById("div2");
+
+        //    //grab the div
+        //    var stockInfo = document.getElementById('stockInfo');
+        //    var xmlDocument2 = loadXMLDoc("stocks.xml")
+
+        //    // get the root element
+        //    // Portfolio
+        //    var portfolioNode = xmlDocument2.documentElement;
+
+        //    //show and establish we are at portfolio and it has 5 stock children
+        //    stockInfo.innerHTML = "<p>
+    Here is the root node of the document: " +
+    //        "<strong>" + portfolioNode.nodeName + "</strong>" +
+    //        "<br />The following are its child elements:" + element.childElementCount
+    //    "
+</p>
+<ol>
+    ";//start ordered list
+
+    //    // get the first child node of root element
+    //    //StockNode everywhere curNode2 or current node is
+    //    var stockNode = portfolioNode.firstElementChild;
+
+    /*
+    //loop fucked up
+    // traverse all child nodes of root element
+    var stockChildNode = stockNode.firstElementChild;
+    while (stockChildNode != null) {
+    var name = stockChildNode.nodeName;
+    var text = stockChildNode.textContent;
+    // print node name of each child element Company, ...Dividend
+    stockInfo.innerHTML += "
+    <br />
+    <li><strong>" + name + text "</strong></li>";
+    stockChildNode = stockChildNode.nextElementSibling;//Market..Sector..Price..Year Range.. Dividend
+    }
+    }*/
+    //end ordered list
+
+    //stockInfo.append("
+    <br />
+    <ol><li>The first child of root node Portfolio is: " + stockNode.nodeName + stockNode.textContent = "</li></ol>");
+
+    //// get the first child node of root element
+    //stockInfo.innerHTML += "
+    <br />The first child of root node is: " + stockNode.nodeName + stockNode.textContent;
+    //// get the first child node of stock element
+    //var companyNode = stockNode.firstElementChild;
+    // stockInfo.innerHTML += "
+    <br />The first child of stock node is: " + companyNode.nodeName + companyNode.textContent;
+    //// get the next sibling of first child
+    //var marketNode = companyNode.nextElementSibling;
+    //stockInfo.innerHTML += "
+    <br /> whose next sibling is:  + marketNode.nodeName + marketNode.textContent;
+    //// get the next sibling of first child
+    //var sectorNode = marketNode.nextElementSibling;
+    //stockInfo.innerHTML += "
+    <br /> whose next sibling is:  + sectorNode.nodeName + sectorNode.textContent;
+    //// get the next sibling of first child
+    //var priceNode = sectorNode.nextElementSibling;
+    //stockInfo.innerHTML += "
+    <br /> whose next sibling is:  + priceNode.nodeName + priceNode.textContent;
+    //// get the next sibling of first child
+    //var yearrangeNode = priceNode.nextElementSibling;
+    //stockInfo.innerHTML += "
+    <br /> whose next sibling is:  + yearrangeNode.nodeName + yearrangeNode.textContent;
+    //// year range children
+    //var yrlow = yearrangeNode.firstElementChild;
+    //var yrhigh = yrlow.nextElementSibling;
+    //stockInfo.innerHTML += "
+    <br /> whose first child is:  + yrlow.nodeName + yrlow.textContent;
+    //stockInfo.innerHTML += "
+    <br /> whose second child is:  + yrhigh.nodeName + yrhigh.textConten
+
+
+    //
+    <STYLE type="text/css">
+        BODY {
+            background: url("javascript:yourFunction();")
+        }
+    </STYLE>
+    /// Prototype
+    //$$(".first-nav li a")
+    //    .invoke("observe", "mouseenter", function (event) {
+    //        // The mouse has entered the element, can reference the element via 'this'
+    //    })
+    //    .invoke("observe", "mouseleave", function (event) {
+    //        // The mouse has left the element, can reference the element via 'this'
+    //    });
+    -->

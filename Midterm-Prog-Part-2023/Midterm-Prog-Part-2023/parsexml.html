@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <script>
+            const xmlString = "" <Portfolio>
+                                    <Stock>
+                                        <Company>Google</Company>
+                                        <Market>NASDAQ</Market>
+                                        <Sector>Software</Sector>
+                                        <Price>$487.80</Price>
+                                        <YearRange>
+                                            <Low>$331.55</Low>
+                                            <High>$488.50</High>
+                                        </YearRange>
+                                        <Dividend/>
+                                    </Stock>
+                                    <Stock>
+                                        <Company>Boeing Company</Company>
+                                        <Market>NYSE</Market>
+                                        <Sector>Aerospace</Sector>
+                                        <Price>$79.05</Price>
+                                        <YearRange>
+                                            <Low>$63.70</Low>
+                                            <High>$89.58</High>
+                                        </YearRange>
+                                        <Dividend>
+                                            <Amount>$1.20</Amount>
+                                            <Yield>$1.50</Yield>
+                                            <Frequency>QTR</Frequency>
+                                        </Dividend>
+                                    </Stock>
+                                    <Stock symbol="MO">
+                                        <Company>Altria Group</Company>
+                                        <Market>NYSE</Market>
+                                        <Sector>Comsumables</Sector>
+                                        <Price>$81.70</Price>
+                                        <YearRange>
+                                            <Low>$68.36</Low>
+                                            <High>$85.00</High>
+                                        </YearRange>
+                                        <Dividend available="true">
+                                            <Amount>$3.44</Amount>
+                                            <Yield>$4.2</Yield>
+                                            <Frequency>ANNUAL</Frequency>
+                                        </Dividend>
+                                    </Stock>
+                                    <Stock symbol="CSCO">
+                                        <Company>Cisco Systems</Company>
+                                        <Market>NASDAQ</Market>
+                                        <Sector>Computer Networks</Sector>
+                                        <Price>$24.20</Price>
+                                        <YearRange>
+                                            <Low>$16.87</Low>
+                                            <High>$24.78</High>
+                                        </YearRange>
+                                        <Dividend available="false"/>
+                                    </Stock>
+                                    <Stock symbol="ED">
+                                        <Company>Consolidated Edison Inc.</Company>
+                                        <Market>NYSE</Market>
+                                        <Sector>Electric Utilities</Sector>
+                                        <Price>$48.31</Price>
+                                        <YearRange>
+                                            <Low>$41.17</Low>
+                                            <High>$48.39</High>
+                                        </YearRange>
+                                        <Dividend available="true">
+                                            <Amount>$2.30</Amount>
+                                            <Yield>$4.80</Yield>
+                                            <Frequency>QTR</Frequency>
+                                        </Dividend>
+                                    </Stock>
+                                </Portfolio> ';
+                                               
+ const xmlDocument = new DomParser.parseFromString(xmlString, "text/xml");
+ console.log(xmlDocument);
+        </script>
+
+    </body>
+</html>
+
