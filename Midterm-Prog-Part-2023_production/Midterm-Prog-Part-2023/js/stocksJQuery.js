@@ -1,14 +1,15 @@
-﻿// Wait for the document to be ready before running the script
+﻿// Waits for the document to be ready before running the script
+//te mighty document.ready()
 $(document).ready(function () {
 
-    // Use AJAX to get the XML file containing the stocks data
+    // Use AJA.ajax to get the XML file containing the stocks data
     $.ajax({
         type: "GET",
         url: "stocks.xml",
         dataType: "xml",
         success: function (xml) {
 
-            // Find all the Stock elements in the XML file and sort them by symbol
+            // Finds all the Stock elements in the XML file and sorts by ticker
             var $stocks = $(xml).find("Stock");
             $stocks.sort(function (a, b) {
                 return $(a).attr("symbol").localeCompare($(b).attr("symbol"));
