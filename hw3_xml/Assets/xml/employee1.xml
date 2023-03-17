@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<employees>
+	<employee>
+		<name>John Doe</name>
+		<department>IT</department>
+		<title>Programmer</title>
+		<image>john-doe.jpg</image>
+	</employee>
+	<employee>
+		<name>Jane Smith</name>
+		<department>Sales</department>
+		<title>Manager</title>
+		<image>jane-smith.jpg</image>
+	</employee>
+	<employee>
+		<name>Bob Johnson</name>
+		<department>HR</department>
+		<title>Coordinator</title>
+		<image>bob-johnson.jpg</image>
+	</employee>
+</employees>

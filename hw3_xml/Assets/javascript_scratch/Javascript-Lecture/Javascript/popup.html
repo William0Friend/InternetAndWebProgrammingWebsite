@@ -1,0 +1,36 @@
+<html>
+<head>
+    <script type="text/javascript">
+
+        var switchButton;
+        var puWin
+        function show_popup() {
+            // Works in all browsers--but not the same as Popup.html
+
+            puWin = window.open("", "Popup", "width=200,height=100");
+
+            var pbody = puWin.document.body;
+            pbody.style.backgroundColor = "lime";
+            pbody.style.border = "solid black 1px";
+            pbody.innerHTML = 'This is a Pop-up Window!';
+
+            switchButton = document.getElementById("b1");
+            switchButton.textContent = "Close pop-up!";
+            switchButton.onclick = close_popup;
+        }
+
+        function close_popup() {
+            puWin.close();
+            switchButton.textContent = "Open pop-up!";
+            switchButton.onclick = show_popup;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <button id="b1" onclick="show_popup()">Show pop-up!</button>
+</body>
+
+</html>

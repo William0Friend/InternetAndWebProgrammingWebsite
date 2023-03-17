@@ -1,0 +1,52 @@
+<html>
+
+   <head>
+      <title>A DOM Example</title>   
+       
+<script>
+
+
+    function loadXMLDoc(fname)
+    {
+        var xmlDoc;
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", fname, false);
+        xmlhttp.send(null);
+        if (xmlhttp.responseXML == null) //(did not load in Chrome), Chrome does not give specific errors
+        {
+            alert("Bad XML");
+            return -1;
+        }
+        xmlDoc = xmlhttp.responseXML.documentElement;
+        //if not ie, at least for syntax errors
+        if (xmlDoc.nodeName == "parsererror")	//there are errors (this works in firefox)
+        {	//finding out what they are
+            alert(xmlDoc.childNodes[0].nodeValue);
+            return -1;
+        }
+        return xmlDoc;
+    }
+
+    function displayResult()
+    {
+        //var urlXml = "http://" + location.host + "/XML-DOM/sorting.xml";
+        //var urlXsl = "http://" + location.host + "/XML-DOM/sorting.xsl";
+        
+        xml = loadXMLDoc("sorting.xml");
+        xsl = loadXMLDoc("sorting.xsl");
+
+        xsltProcessor=new XSLTProcessor();
+        xsltProcessor.importStylesheet(xsl);
+        resultDocument = xsltProcessor.transformToFragment(xml,document);
+        document.getElementById("test").appendChild(resultDocument);
+ 
+    }
+       
+   </script>
+   </head>
+
+   <body id="example" onload="displayResult()" >
+    <div id="test"> </div>
+   </body>
+</html>
+

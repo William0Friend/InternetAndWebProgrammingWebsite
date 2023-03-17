@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<skeletons>
+	<skeleton name="Classic Skeleton">
+		<price>100.00</price>
+		<image>./Assets/svg/skeleton_crow.svg</image>
+		<quantity>10</quantity>
+		<description>A classic skeleton with all the usual bones.</description>
+	</skeleton>
+	<skeleton name="Disarticulated Skeleton">
+		<price>200.00</price>
+		<image>./Assets/svg/skeleton_dog.svg</image>
+		<quantity>5</quantity>
+		<description>A disassembled skeleton for studying anatomy.</description>
+	</skeleton>
+	<skeleton name="Fetal Skeleton">
+		<price>300.00</price>
+		<image>./Assets/svg/skeleton_bat.svg</image>
+		<quantity>3</quantity>
+		<description>A fetal skeleton for studying fetal development.</description>
+	</skeleton>
+	<skeleton name="Halloween Skeleton">
+		<price>50.00</price>
+		<image./>Assets/svg/skeleton_hourse.svg</image>
+		<quantity>20</quantity>
+		<description>A skeleton with a jack-o'-lantern head for Halloween decorations.</description>
+	</skeleton>
+</skeletons>

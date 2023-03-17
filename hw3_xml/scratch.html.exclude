@@ -1,0 +1,199 @@
+﻿ <!--Meat the Team LEADERS intro JumboTron Dark-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-light rounded-3 text-dark">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Meet the Team</h1>
+
+            </div>
+        </div>
+    </article>
+
+    <!--Meat the Team LEADERS intro JumboTron Dark-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Head Buyers</h1>
+
+            </div>
+        </div>
+    </article>
+    <!--Employee meat the team section make more-->
+    <section id="meet-the-team" class="hidden">
+        <div class="row m-1">
+            <!--Rick Sanchez -->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/business-man-black-tuxedo-white-background.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Rick Sanchez</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text> />
+                <h2>Rick Sanchez</h2>
+                <p>Founder, Head of Design</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!--- employess -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Han Solo</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Han Solo</h2>
+                <p>Head of Logistics
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-man-beige-jacket-cap-holding-eyeglasses-with-both-hands-looking-optimistic-front-view.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Nicola Tesla</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Nikola Tesla</h2>
+                <p> Founder, Head of Research</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!-- Call to action, Final pitch about us to customer-->
+            <!--Meat the Team LEADERS intro JumboTron Dark-->
+            <article class="hidden">
+                <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+                    <div class="container py-5">
+                        <h1 class="display-5 fw-bold text-center">Head Sellers</h1>
+
+                    </div>
+                </div>
+            </article>
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/two-young-people-offering-dvds-sale.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Buzz Aldren</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Buzz Aldren</h2>
+                <p>Head of Space Skeletons</p>
+                <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-businessman-with-boxing-gloves.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Tim Burners Lee</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">
+                    <h2>Tim Berners Lee</h2>
+                    <p> Website Architect </p>
+                    <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-playing-with-balloon.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Dennis Ritchie</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>SkeleAI</h2>
+                <p>GAI, real CEO</p>
+                <p><a class="btn btn-primary" href="#">Employee Profile</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!--Meat the Team LEADERS intro JumboTron Dark-->
+            <article class="hidden">
+                <div class="p-5 mb-4 bg-dark rounded-3 text-white">
+                    <div class="container py-5">
+                        <h1 class="display-5 fw-bold text-center">Head Developers</h1>
+
+                    </div>
+                </div>
+            </article>
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Brian Kerington</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Brian Kerington</h2>
+                <p>Head of docs & micro languages</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-making-good-bad-sign.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Linus Trevaulds</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Linus Trevaulds</h2>
+                <p>
+                    CTO
+                </p><p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+
+                <h2>Dennis Ritchie</h2>
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/two-young-people-offering-dvds-sale.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Ken Thompson</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>                <h2>Ken Thompson</h2>
+                <p>Designer of skeleOs</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/smiling-worker-playing-with-his-tie.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Brajne Stroudsup</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+                <h2>Bjarne Strousdsup</h2>
+                <p>Designer of SkeleLang++</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/businessman-his-office-holding-cactus.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Guido Van Rossum</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text>
+
+                <h2>Guido Van Rossum</h2>
+                <p>Creator of Skelthon</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+            <!---->
+            <!---->
+
+            <div class="col-4 my-1">
+                <img class="bd-placeholder-img rounded-circle" src="./Assets/image/young-man-beige-jacket-cap-holding-eyeglasses-with-both-hands-looking-optimistic-front-view.jpg" role="img" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Guido Van Rossum</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">
+
+                </text>
+
+                <h2>William Friend</h2>
+                <p>Intern</p>
+                <p><a class="btn btn-primary" href="#">Employee Details</a></p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </section>
+
+    <!-- Call to action, Final pitch about us to customer-->
+    <section class="hidden">
+        <div class="bg-dark text-secondary px-4 py-5 text-center mx-1 my-1">
+            <div class="py-5">
+
+                <div class="col-lg-6 mx-auto">
+                    <h3> Skeletons.com </h3>
+                    <img src="./Assets/svg/Skeleton-Key-Silhouette.svg" /.
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center align-content-xxl-center">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call to action, Final pitch about us to customer-->
+    <section class="hidden">
+        <div class="bg-dark text-secondary px-4 py-5 text-center">
+            <div class="py-5">
+                <h1 class="display-5 fw-bold text-white">Call to action</h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="fs-5 mb-4">
+                        Please Donate Money to The Cause! We accept dollars, cents, stripe, crypto. (please no dogecoin)
+                    </p>
+                    <p class="fs-5 mb-4">
+                        We are legion. And we are more then we can list in one page.
+                    </p>
+                    <div class="container gap-2 d-sm-flex justify-content-center align-content-center">
+                        <!--needs image-->
+                        <img class="img-fluid" src="./Assets/svg/skeletons_scary-skulls-seamless-pattern.svg" />
+                        <button class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold last1 btn-group" type="button">Help the Cause</button>
+                        <button class="btn btn-outline-dark btn-lg px-4 last2 btn-group btn-danger text-dark" type="button">Join the skeleton member program</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

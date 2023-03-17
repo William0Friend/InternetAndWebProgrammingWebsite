@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<employees>
+	<department name="Sell">
+		<subdepartment name="Sellers">
+			<employee name="Rick Sanchez" image="./Assets/image/business-man-black-tuxedo-white-background.jpg" title="Founder, Head of Design" email="rick.c347@skeletons.com" />
+			<employee name="Han Solo" image="./Assets/image/businessman-his-office-holding-cactus.jpg" title="Head of Logistics" email="solo.falcon@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Buy">
+		<subdepartment name="Buyers">
+			<employee name="Tim Berners Lee" image="./Assets/image/young-man-beige-jacket-cap-holding-eyeglasses-with-both-hands-looking-optimistic-front-view.jpg" title="Website Architect" email="tim0@skeletons.com" />
+			<employee name="SkeleAI" image="./Assets/image/businessman-his-office-playing-with-balloon.jpg" title="GAI, real CEO" email="zero@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Dev">
+		<subdepartment name="Developers">
+			<employee name="David Chen" image="./Assets/image/businessman-his-office-holding-cactus.jpg" title="Senior Software Engineer" email="david.chen@skeletons.com" />
+			<employee name="Amy Li" image="./Assets/image/businessman-his-office-making-good-bad-sign.jpg" title="Software Engineer" email="amy.li@skeletons.com" />
+		</subdepartment>
+	</department>
+	<department name="Others">
+		<subdepartment name="PR">
+			<employee name="Tom Nguyen" image="./Assets/image/businessman-his-office-playing-with-balloon.jpg" title="QA Manager" email="tom.nguyen@skeletons.com" />
+			<employee name="Emily Wang" image="./Assets/image/smiling-worker-playing-with-his-tie.jpg" title="QA Analyst" email="emily.wang@skeletons.com" />
+		</subdepartment>
+	</department>
+</employees>

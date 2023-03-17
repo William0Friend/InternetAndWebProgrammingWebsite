@@ -1,0 +1,64 @@
+﻿
+.name {
+    display: block;
+}
+
+.image {
+    display: block;
+}
+
+.title {
+    display: block;
+}
+
+.email {
+    display: block;
+}
+
+
+.empSection {
+/*    margin-bottom: 20px;
+*/}
+
+.my-h2, .my-h3 {
+/*    margin: 0;
+*/}
+
+
+
+.my-employee {
+    display: block;
+}
+.Buy {
+    display: block;
+}
+.Sell {
+    display: block;
+}
+.Dev {
+    display: block;
+}
+.Others {
+    display: block;
+}
+
+.name {
+    display: block;
+}
+
+.image {
+    display: block;
+}
+
+.title {
+    display: block;
+}
+
+.email {
+    display: block;
+}
+
+  /*  display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-right: 20px;*/

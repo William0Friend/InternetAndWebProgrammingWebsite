@@ -1,0 +1,26 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "name": "John Smith",
+            "department": "Sales",
+            "title": "Sales Manager",
+            "image": "john-smith.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Jane Doe",
+            "department": "Marketing",
+            "title": "Marketing Manager",
+            "image": "jane-doe.jpg"
+        },
+        {
+            "id": "3",
+            "name": "Bob Johnson",
+            "department": "IT",
+            "title": "Software Developer",
+            "image": "bob-johnson.jpg"
+        }
+    ]
+
+}

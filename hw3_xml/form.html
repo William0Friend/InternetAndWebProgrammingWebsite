@@ -1,0 +1,246 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" /><!--<a href="d:\github\internetandwebprogrammingwebsite\hw3\form.html">d:\github\internetandwebprogrammingwebsite\hw3\form.html</a>-->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <!--<meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    -->
+    <!-- add icon link -->
+    <title>Skeletons</title>
+    <link rel="icon"
+          type="image/svg"
+          href="./Assets/svg/skull_logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+    <!-- Fonts -->
+    <link rel="stylesheet"
+          href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+    <!-- Override bootstrap, with higher specificity -->
+    <!-- Main style sheet for every page -->
+    <link type="text/css" href="./Assets/css/styles.css" rel="stylesheet">
+
+    <!--Jquery-->
+    <script src="./Assets/javascript/jquery-3.6.3.js"></script>
+    <script src="./Assets/javascript/progressbarJquery.js"></script>
+    <link rel="stylesheet" href="./Assets/css/progressBar.css" />
+
+    <!-- my javascript-->
+    <script src="./Assets/javascript/test.js"></script>
+    <script src="./Assets/javascript/events.js"></script>
+
+    <!--scrollMagic-->
+    <!--<script defer
+            src="./Assets/javascript/scrollMagic.js"></script>
+    <link rel="stylesheet"
+          type="text/css"
+          href="./Assets/css/scrollMagic.css" />-->
+    <!-- button wiggle -->
+    <!--    <link type="text/css" href="./Assets/css/btn-wiggle.css" rel="stylesheet">
+    -->
+    <!-- progress bar -->
+     <link type="text/css" href="./Assets/css/progressBar.css" rel="stylesheet">
+     <script src="Assets/javascript/progressbarJquery.js"></script>
+     <body>
+
+    <script src="./Assets/javascript/formValidation1.js">
+
+    </script>
+
+
+
+
+    <header>
+        <!-- Navbar-->
+        <section>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark z-1 my-fixed-top">
+
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Skeletons.com Template Page Only</a>
+                    <button class="navbar-toggler" data-bs-target="#navbarNavAltMarkup" data-bs-toggle="collapse" type="button" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarNavAltMarkup" class="collapse navbar-collapse">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="./homepage.html" title="Click me I work!" aria-current="page">Home</a>
+                            <a class="nav-link disabled" href="#">Buy</a>
+                            <a class="nav-link disabled" href="#">Sell</a>
+                            <a class="nav-link disabled" href="#">Developers</a>
+                            <a class="nav-link" href="./AboutUs.html" title="Click me I work!">About</a>
+                            <a class="nav-link active" href="./form.html">form</a>
+                            <a class="nav-link" href="./skeleton.html">template</a>
+                            <a class="nav-link disabled" href="#">Login/Signup</a>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- progress bar -->
+
+        <div class="my-progress-container my-fixed-top ">
+            <span class="my-progress-bar"></span>
+        </div>
+
+
+
+        <!-- �	Banner -->
+        <section>
+            <div id="outer container-fluid">
+                <div id="inner">
+                    <img id="banner" class="banner" src="./Assets/svg/Skeletons_com_png.png" alt="Skeletons.com Logo" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+    </header>
+
+
+
+
+    <!--Mission statement JumboTron Light-->
+    <article class="hidden">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container py-5">
+                <h1 class="display-5 fw-bold text-center">Skeletons.com Employee Search Page</h1>
+                <p class="col-md-8 fs-4">
+                    <h3>Try our advanced skelesearch features and skeledb</h3>
+                    <h6>Skelesearch powered by google, adn skeledb powered by sqlite</h6>
+                <p class="text-center">
+                    <label> Keep in mind </label>
+                    <ul class="justify-content-center">
+                        <li> All </li>
+                        <li> Both.</li>
+                    </ul>
+                </p>
+                </p>
+                <p class="text-center">
+                    <button id="empSearch" class="btn btn-primary btn-lg ml-5 " type="button" title="I want to buy a skeleton">
+                        Search
+                    </button>
+                </p>
+            </div>
+        </div>
+    </article>
+
+    <!-- Employee Search Form-->
+    <section>
+        <div class="">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Username</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a username.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    </section>
+
+    <!-- Footer, Light Section -->
+    <section>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-dark">
+                    2023 Friendco
+                </p><p>
+
+                    <a class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none" href="/">
+                        <img class="bi me-2" src="./Assets/svg/skull_logo.svg" width="40" height="32">
+                    </a>
+
+                    <ul class="nav col-md-4 justify-content-end">
+                        <li class="nav-item"><a class="nav-link px-2 text-dark" href="./homepage.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark deactivate" href="#">Buy</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark deactivate" href="#">Sell</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark active" href="#">AboutUs</a></li>
+                        <li class="nav-item"><a class="nav-link px-2 text-dark" href="#">FAQs</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2 text-dark" href="./AboutUs.html" title="Click me I work!">About</a>
+                        </li>
+                    </ul>
+                </p>
+            </footer>
+        </div>
+    </section>
+
+
+
+
+    </body>
+
+</html>
